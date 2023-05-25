@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/c396836495.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link xrel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>DIA MOTORS</title>
+</head>
+<body>
+  <!--  navbar-->
+  <header>
+    <div class="nav container">
+      <!--  logo  -->
+      <a href="#" class="logo">
+        <img src="1-removebg-preview.png" alt="">
+      </a>
+       <!--  Nav links  -->
+      <ul class="navbar">
+        <li><a href="#Home" class="active">Home</a></li>
+        <li><a href="#cars">Cars Parts</a></li>
+        <li><a href="#Produits">Produits</a></li>
+        <li><a href="#Accessoirs">Accessoirs</a></li>
+      </ul>
+       <!--  Icons  -->
+       <div class="nav-icons">
+        <a href="#" class="user"><i class='bx bxs-user'></i></a>
+        <a href="#" class="Cart"><i class='bx bxs-cart'></i> <span>0</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+       </div>
+    </div>
+  </header>
+  <!--  Home  -->
+  <section class="Home" id="Home">
+    <!--  Home content  -->
+    <div class="home-container container">
+      <div class="home-text">
+        <h1>WELCOME TO <br> <strong>DEVMOTOR</strong></h1>
+        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Dignissimos, eligendi.</p>
+        <!--  Home Button  -->
+        <a href="" class="btn">Explore Now</a>
+      </div>
+      <!--  Home image  -->
+      <div class="home-img">
+        <img src="1-removebg-preview.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!--  les marques de voiture  -->
+  <section class="cars " id="cars">
+    <!--  heading  -->
+    <div class="heading">
+      <h2>Marques de <span>voitures</span></h2>
+    </div>
+
+    <div class="cars-parts">
+              <!--  Mercedes  -->
+      <div class="box">
+        <img src="image/Mercedes/Mercedes-Benz-logo-cover-958x575.jpg" alt="">
+        <h2>Mercedes</h2>
+        <a href="mercedes.html" class="btns">Read More</a>
+        <button id="mercedes" class="like-button"><i class='bx bx-heart'></i></i></button>
+      </div>
+
+      <!--  BMW  -->
+      <div class="box">
+        <img src="image/BMW/333.jpg" alt="">
+        <h2>BMW</h2>
+        <a href="BMW.html" class="btns">Read More</a>
+        <button id="BMW" class="like-button"><i class='bx bx-heart'></i></button>
+      </div>
+
+      <!--  FORD  -->
+      <div class="box">
+        <img src="image/FORD/1366_2000.jpg" alt="">
+        <h2>FORD</h2>
+        <a href="audi.html" class="btns">Read More</a>
+        <button id="FORD" class="like-button"><i class='bx bx-heart'></i></button>
+      </div>
+
+      <!--  Peugeot  -->
+      <div class="box">
+        <img src="image/Peugeot/cover-r4x3w1200-579c2937194c3-ce-que-cache-le-nouveau-logo-peugeot-peugeot-rajeunit-le.jpg" alt="">
+        <h2>Peugeot</h2>
+        <a href="Peugeot.html" class="btns">Read More</a>
+        <button id="Peugeot" class="like-button"><i class='bx bx-heart'></i></button>
+      </div>
+
+            <!--  JEEP  -->
+            <div class="box">
+              <img src="image/JEEP/jeep-logo-AD7AP5.jpg" alt="">
+              <h2>JEEP</h2>
+              <a href="JEEP.html" class="btns">Read More</a>
+              <button id="JEEP" class="like-button"><i class='bx bx-heart'></i></button>
+            </div>
+
+            <!--  Toyota  -->
+            <div class="box">
+              <img src="image/Toyota/logo-Toyota-hybride.jpg" alt="">
+              <h2>TOYOTA</h2>
+              <a href="Toyota.html" class="btns">Read More</a>
+              <button id="Toyota" class="like-button"><i class='bx bx-heart'></i></button>
+            </div>
+
+        </div>
+        </section>
+        <!--  produits  -->
+          <section class="Produits" id="Produits">
+              <div class="heading">
+      <h2>Produits <span>d'entretiens</span></h2>
+    </div>
+    <div class="Produits-container container">
+      <div class="box">
+        <img src="image/Produit/1203457250215257.7DsP8OwTcY9DF3bwaEgH_height640.png" alt="">
+        <h2>huile max</h2>
+        <span>20.000 XOF</span>
+        <a href="#"><i class='bx bx-cart'></i></a>
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+      </div>
+
+        <div class="box">
+          <img src="image/Produit/650.png" alt="">
+          <h2>huile max</h2>
+          <span>20.000 XOF</span>
+          <a href="#"><i class='bx bx-cart'></i></a>
+          
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+        </div>
+        
+          <div class="box">
+            <img src="image/Produit/71uwsnAcSqL._AC_UL600_SR600,400_.jpg" alt="">
+            <h2>huile max</h2>
+            <span>20.000 XOF</span>
+            <a href="#"><i class='bx bx-cart'></i></a>
+            
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+          </div>
+          
+            <div class="box">
+              <img src="image/Produit/Anywhere-Spray-Wax-pour-lavage-de-voiture-Voiture-produit-pour-l-auto-Maintenance-d-taillant.jpg" alt="">
+              <h2>huile max</h2>
+              <span>20.000 XOF</span>
+              <a href="#"><i class='bx bx-cart'></i></a>
+              
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+            </div>
+
+              <div class="box">
+                <img src="image/Produit/auto-glym-produits-d-entretien-de-voiture-auto-glym-produits-d-entretien-de-voiture-entretien-de-voiture-produits-de-voiture-lustrant-pour-voiture-nettoyant-pour-voiture-glym-magma-aut.jpg" alt="">
+                <h2>huile max</h2>
+                <span>20.000 XOF</span>
+                <a href="#"><i class='bx bx-cart'></i></a>
+                
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+              </div>
+
+                <div class="box">
+                  <img src="image/Produit/Motor-photo.jpg" alt="">
+                  <h2>huile max</h2>
+                  <span>20.000 XOF</span>
+                  <a href="#"><i class='bx bx-cart'></i></a>
+                  
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+                </div>
+
+                  <div class="box">
+                    <img src="image/Produit/pack-5-etapes.jpg" alt="">
+                    <h2>huile max</h2>
+                    <span>20.000 XOF</span>
+                    <a href="#"><i class='bx bx-cart'></i></a>
+                    
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+                  </div>
+
+                    <div class="box">
+                      <img src="image/Produit/produits-entretien-ecologiques-voiture-magic-car.jpg" alt="">
+                      <h2>huile max</h2>
+                      <span>20.000 XOF</span>
+                      <a href="#"><i class='bx bx-cart'></i></a>
+                      
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+                    </div>
+
+                      <div class="box">
+                        <img src="image/Produit/1.jpg" alt="">
+                        <h2>huile max</h2>
+                        <span>20.000 XOF</span>
+            <a href="#"><i class='bx bx-cart'></i></a>
+            
+        <div class="price">
+          <button onclick="totalClick(1)">+</button>
+          <span id="totalClicks">0</span>
+          <button onclick="totalClick(-1)">-</button>
+          <button onclick="totalClick(0)">RESET</button>
+        </div>
+        <button class="mnbtn">Buy Now</button>
+         </div>
+         
+    </div>
+  </section>
+  <!--  Accessoires  -->
+  <section class="Accessoirs" id="Accessoirs">
+    <div class="heading">
+<h2>Cars <span>Accessoirs</span></h2>
+</div>
+<div class="Produits-container container">
+<div class="box">
+<img src="image/Accessoirs/1-3-427x546.jpg" alt="">
+<h2>huile max</h2>
+<span>20.000 XOF</span>
+<a href="#"><i class='bx bx-cart'></i></a>
+<button class="mnbtn">Buy Now</button>
+</div>
+
+<div class="box">
+<img src="image/Accessoirs/products-product-image-880462880.jpg" alt="">
+<h2>huile max</h2>
+<span>20.000 XOF</span>
+<a href="#"><i class='bx bx-cart'></i></a>
+<button class="mnbtn">Buy Now</button>
+</div>
+
+<div class="box">
+  <img src="image/Accessoirs/1.jpg" alt="">
+  <h2>huile max</h2>
+  <span>20.000 XOF</span>
+  <a href="#"><i class='bx bx-cart'></i></a>
+  <button class="mnbtn">Buy Now</button>
+</div>
+
+  <div class="box">
+    <img src="image/Accessoirs/3-pi-ces-voiture-longue-peluche-chaud-volant-couverture-laine-frein-main-voiture-accessoire-auto-fourrure.jpeg" alt="">
+    <h2>huile max</h2>
+    <span>20.000 XOF</span>
+    <a href="#"><i class='bx bx-cart'></i></a>
+    <button class="mnbtn">Buy Now</button>
+  </div>
+
+    <div class="box">
+      <img src="image/Accessoirs/3.jpg" alt="">
+      <h2>huile max</h2>
+      <span>20.000 XOF</span>
+      <a href="#"><i class='bx bx-cart'></i></a>
+      <button class="mnbtn">Buy Now</button>
+    </div>
+
+      <div class="box">
+        <img src="image/Accessoirs/4257.jpg" alt="">
+        <h2>huile max</h2>
+        <span>20.000 XOF</span>
+        <a href="#"><i class='bx bx-cart'></i></a>
+        <button class="mnbtn">Buy Now</button>
+      </div>
+
+        <div class="box">
+          <img src="image/Accessoirs/4PCS-Universal-Rubber-Car-Floor-Mats-All-Weather-Protection.jpg" alt="">
+          <h2>huile max</h2>
+          <span>20.000 XOF</span>
+          <a href="#"><i class='bx bx-cart'></i></a>
+          <button class="mnbtn">Buy Now</button>
+        </div>
+
+          <div class="box">
+            <img src="image/Accessoirs/51janbSBTUL._SL500_.jpg" alt="">
+            <h2>huile max</h2>
+            <span>20.000 XOF</span>
+            <a href="#"><i class='bx bx-cart'></i></a>
+            <button class="mnbtn">Buy Now</button>
+          </div>
+
+            <div class="box">
+              <img src="image/Accessoirs/61hLPQlQSfL.jpg" alt="">
+              <h2>huile max</h2>
+              <span>20.000 XOF</span>
+             <a href="#"><i class='bx bx-cart'></i></a>
+             <button class="mnbtn">Buy Now</button>
+             </div>
+
+             <div class="box">
+              <img src="image/Accessoirs/depositphotos_69061535-stock-photo-alloy-wheel-and-car-accessories.jpg" alt="">
+              <h2>huile max</h2>
+              <span>20.000 XOF</span>
+             <a href="#"><i class='bx bx-cart'></i></a>
+             <button class="mnbtn">Buy Now</button>
+            </div>
+
+             <div class="box">
+              <img src="image/Accessoirs/f89bcab14ede.jpg" alt="">
+              <h2>huile max</h2>
+              <span>20.000 XOF</span>
+             <a href="#"><i class='bx bx-cart'></i></a>
+             <button class="mnbtn">Buy Now</button>
+            </div>
+
+             <div class="box">
+              <img src="image/Accessoirs/Housses_de_voiture.png" alt="">
+              <h2>huile max</h2>
+              <span>20.000 XOF</span>
+             <a href="#"><i class='bx bx-cart'></i></a>
+             <button class="mnbtn">Buy Now</button>
+            </div>
+          </div>
+
+</div>
+</section>
+<!--  Accessoires  -->
+<section class="newsletter container">
+  <div class="heading">
+    <h2>suscribe <span>newsletter</span></h2>
+  </div>
+  <form action="">
+    <input type="email" name="" id="" placeholder="Enter your email..." class="email-box" required>
+    <input type="submit" value="Suscribe" class="btn">
+  </form>
+</section>
+<!-- footer -->
+<section class="footer container">
+  <div class="footer-box">
+          <!--  logo  -->
+          <a href="#" class="logo">
+            <img src="1-removebg-preview.png" alt="">
+          </a>
+          <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+          </div>
+  </div>
+  <div class="footer-box">
+    <h3>Legal</h3>
+    <a href="#">Privacy policy</a>
+    <a href="#">Refund policy</a>
+    <a href="#">Terms of user</a>
+    <a href="#">Disclaimer</a>
+  </div>
+  <div class="footer-box">
+    <h3>Pages</h3>
+    <a href="#Home">Home</a>
+    <a href="#cars parts">cars parts</a>
+    <a href="#produits">Produits</a>
+    <a href="#Accessoirs">Accessoirs</a>
+  </div>
+  <div class="footer-box">
+    <h3>Partners</h3>
+    <p>united states</p>
+    <p>Japan</p>
+    <p>Germany</p>
+    <p>french</p>
+  </div>
+</section>
+<!--  Copyright  -->
+<div class="copyright">
+  <p>&#169; DEVMOTOR ALL Right Reserved.</p>
+</div>
+</body>
+</html>
